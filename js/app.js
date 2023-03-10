@@ -9,7 +9,7 @@ const APP = {
 
    document
    .getElementbyId('btnImport')
-    .addEventListener('click' , APP.importData);
+   .addEventListener('click' , APP.importData);
     
     document
       .getElementById('btnExport')
