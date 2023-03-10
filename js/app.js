@@ -7,6 +7,10 @@ const APP = {
     const form = document.querySelector('#collect form');
     form.addEventListener('submit', APP.saveData);
 
+   document
+   .getElementbyId('btnImport')
+    .addEventListener('click' , APP.importData);
+    
     document
       .getElementById('btnExport')
       .addEventListener('click', APP.exportData);
@@ -47,6 +51,12 @@ const APP = {
     tbody.append(tr);
     //data references for later editing
   },
+ importData() {
+  //TODO
+  alert("Nog niet geprogrammeerd");
+      
+},
+  
   exportData() {
     //insert the header row
     APP.data.unshift(['R∕N', 'INSZ', 'Naam', 'Periode van' , 'Periode tot' , 'Bedrag' , 'KBO Instelling' , 'Naam instelling']);
