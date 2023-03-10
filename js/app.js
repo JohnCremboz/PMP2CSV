@@ -7,13 +7,14 @@ const APP = {
     const form = document.querySelector('#collect form');
     form.addEventListener('submit', APP.saveData);
 
-   document
-   .getElementbyId('btnImport')
-   .addEventListener('click' , APP.importData);
-    
+     
     document
       .getElementById('btnExport')
       .addEventListener('click', APP.exportData);
+
+    document
+    .getElementById('btnImport')
+    .addEventListener('click' , APP.importData)
 
     document
       .querySelector('table tbody')
