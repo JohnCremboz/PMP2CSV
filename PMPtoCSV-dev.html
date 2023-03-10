@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+    <title>PMP2CSV</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <center>
+		<h1 style="color:green">Aangifte PMP naar csv-bestand</csv-bestand></h1>
+		<h2>Versie 0.2 rc1 - 10.03.2023 - Gertjan Debusschere</h2>
+		
+    <div id="collect">
+      <form>
+        <p>
+          <label for="RN">R∕N</label>
+          <select name="RN" id="RN">
+            <option value="N">N</option>
+            <option value="R">R</option>
+          </select>
+        </p>
+        <p>
+          <label for="INSZ">RRN</label>
+          <input type="text" id="INSZ" name="INSZ" value="" />
+        </p>
+        <p>
+          <label for="Name_man">Naam mandataris</label>
+          <input type="text" id="Name_man" name="eName_man" value="" />
+        </p>
+        <p>
+          <label for="Per_from">Periode van</label>
+          <input type="text" id="Per_from" name="Per_from" value="01/01/2022" />
+        </p>
+        <p>
+            <label for="Per_until">Periode tot</label>
+            <input type="text" id="Per_until" name="Per_until" value="01/01/2022" />
+          </p>
+          <p>
+            <label for="Amount">Bruto presentiegeld</label>
+            <input type="text" id="Amount" name="Amount" value="0,00" />
+          </p>
+          <p>
+            <label for="KBO_ins">KBO vertegenwoordigde overheid/instelling</label>
+            <input type="text" id="KBO_ins" name="KBO_ins" value="" />
+          </p>
+          <p>
+            <label for="Name_ins">Naam vertegenwoordigde overheid/instelling</label>
+            <input type="text" id="Name_ins" name="Name_ins" value="" />
+          </p>
+        <p>
+          <button id="btnSave">Toevoegen</button>
+        </p>
+      </form>
+    </div>
+    <div id="display">
+      <p>
+        <button id="btnExport">Export</button>
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>R/N</th>
+            <th>RRN</th>
+            <th>Naam mandataris</th>
+            <th>Periode van</th>
+            <th>Periode tot</th>
+            <th>Bruto presentiegeld</th>
+            <th>KBO Instelling</th>
+            <th>Naam instelling</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr data-row="0">
+            <td data-col="0" data-name="fname">Sample</td>
+            <td data-col="1">Name</td>
+            <td>sample@work.org</td>
+            <td>freesample</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
